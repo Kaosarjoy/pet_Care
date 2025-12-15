@@ -1,0 +1,74 @@
+[
+  {
+    "serviceId": 1,
+    "serviceName": "Winter Coat Fitting for Dogs",
+    "providerName": "PawCare Studio",
+    "providerEmail": "info@pawcare.com",
+    "price": 25,
+    "rating": 4.9,
+    "slotsAvailable": 4,
+    "description": "Custom coat fitting and warm outfit options to keep your dog comfortable in the cold.",
+    "image": "https://i.postimg.cc/3x8h9q6k/dog-coat.jpg",
+    "category": "Clothing"
+  },
+  {
+    "serviceId": 2,
+    "serviceName": "Winter Grooming & Fur Care",
+    "providerName": "Happy Tails Care",
+    "providerEmail": "contact@happytails.com",
+    "price": 35,
+    "rating": 4.7,
+    "slotsAvailable": 6,
+    "description": "Special winter grooming to maintain healthy fur and skin during cold weather.",
+    "image": "https://i.postimg.cc/K8ZkFq7C/winter-grooming.jpg",
+    "category": "Grooming"
+  },
+  {
+    "serviceId": 3,
+    "serviceName": "Heated Bed Setup for Pets",
+    "providerName": "Cozy Paws",
+    "providerEmail": "support@cozypaws.com",
+    "price": 40,
+    "rating": 4.8,
+    "slotsAvailable": 3,
+    "description": "Warm and comfortable heated bedding setup to protect pets from winter chills.",
+    "image": "https://i.postimg.cc/zfH2d0gK/pet-bed.jpg",
+    "category": "Comfort"
+  },
+  {
+    "serviceId": 4,
+    "serviceName": "Winter Health Check-up",
+    "providerName": "Pet Health Plus",
+    "providerEmail": "care@pethealthplus.com",
+    "price": 30,
+    "rating": 4.6,
+    "slotsAvailable": 5,
+    "description": "Complete winter health check-up to ensure your pet stays healthy in cold seasons.",
+    "image": "https://i.postimg.cc/yx0H8G6r/pet-checkup.jpg",
+    "category": "Health"
+  },
+  {
+    "serviceId": 5,
+    "serviceName": "Paw Protection Treatment",
+    "providerName": "SafeStep Pets",
+    "providerEmail": "hello@safesteppets.com",
+    "price": 20,
+    "rating": 4.5,
+    "slotsAvailable": 8,
+    "description": "Protective paw treatment to prevent cracks and dryness during winter walks.",
+    "image": "https://i.postimg.cc/L6mTzJ8M/paw-care.jpg",
+    "category": "Care"
+  },
+  {
+    "serviceId": 6,
+    "serviceName": "Indoor Play & Exercise Session",
+    "providerName": "Active Paws Club",
+    "providerEmail": "play@activepaws.com",
+    "price": 28,
+    "rating": 4.8,
+    "slotsAvailable": 7,
+    "description": "Safe indoor exercise sessions to keep pets active and happy during winter.",
+    "image": "https://i.postimg.cc/5NqQyPpZ/indoor-play.jpg",
+    "category": "Activity"
+  }
+]
