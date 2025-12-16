@@ -7,7 +7,7 @@ import Banner from '../component/Banner/Banner';
 const HomeLayout = () => {
     return (
         <div>
-            <nav>
+            <nav className="mb-8">
                 <Navbar></Navbar>
             </nav>
             <main>
@@ -15,7 +15,7 @@ const HomeLayout = () => {
                     <Banner></Banner>
                 </section>
             </main>
-
+            
             <Outlet></Outlet>
             <Footer></Footer>
         </div>

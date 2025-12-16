@@ -61,7 +61,7 @@ const Navbar = () => {
             <div className="relative group cursor-pointer">
               <img
                 src={user.photoURL || 'https://i.ibb.co.com/k6VhMmqp/ben-sweet-2-Lowvi-VHZ-E-unsplash.jpg'}
-                className="w-10 h-10 rounded-full border"
+                className="w-10 h-10 rounded-full border "
               />
               <div className="absolute right-0 mt-2 hidden group-hover:block bg-black text-white text-xs px-3 py-1 rounded">
                 {user.displayName || user.email}
