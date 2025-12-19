@@ -10,12 +10,6 @@ const HomeLayout = () => {
             <nav className="mb-8">
                 <Navbar></Navbar>
             </nav>
-            <main>
-                <section>
-                    <Banner></Banner>
-                </section>
-            </main>
-            
             <Outlet></Outlet>
             <Footer></Footer>
         </div>

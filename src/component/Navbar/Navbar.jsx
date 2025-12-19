@@ -2,7 +2,7 @@ import React, { use } from 'react';
 import { NavLink, useNavigate } from 'react-router';
 import logoImg from '../../assets/logo.jpg';
 import { AuthContext } from '../Provider/AuthProvider';
-//import UserImg from '../../assets/User.png';
+import UserImg from '../../assets/User.png';
 const Navbar = () => {
     const {user ,logOutUser}= use(AuthContext)
     const navigate = useNavigate()
@@ -60,7 +60,7 @@ const Navbar = () => {
           <>
             <div className="relative group cursor-pointer">
               <img
-                src={user.photoURL || 'https://i.ibb.co.com/k6VhMmqp/ben-sweet-2-Lowvi-VHZ-E-unsplash.jpg'}
+                src={user.photoURL ||{UserImg}  }
                 className="w-10 h-10 rounded-full border "
               />
               <div className="absolute right-0 mt-2 hidden group-hover:block bg-black text-white text-xs px-3 py-1 rounded">

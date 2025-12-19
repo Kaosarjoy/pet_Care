@@ -1,0 +1,38 @@
+[
+  {
+    "id": 1,
+     "price":2000,
+    "name": "Dr. Ahsan Habib",
+    "specialty": "Small Animal Specialist",
+    "experience": "8+ Years Experience",
+    "rating": 4.9,
+    "image": "https://i.ibb.co.com/jk0935Lk/usman-yousaf-p-Trhfmj2j-DA-unsplash.jpg"
+  },
+  {
+    "id": 2,
+    "price":2000,
+    "name": "Dr. Nusrat Jahan",
+    "specialty": "Pet Surgery Expert",
+    "experience": "6+ Years Experience",
+    "rating": 4.8,
+    "image": "https://i.ibb.co.com/whgWHw76/bruno-rodrigues-279x-IHym-PYY-unsplash.jpg"
+  },
+  {
+    "id": 3,
+     "price":2000,
+    "name": "Dr. Rafi Ahmed",
+    "specialty": "Veterinary Dermatologist",
+    "experience": "7+ Years Experience",
+    "rating": 4.7,
+    "image": "https://i.ibb.co.com/xtJ20JxT/karlo-tottoc-yb-Z5h-Rxa-WS4-unsplash.jpg"
+  },
+  {
+    "id": 4,
+     "price":2000,
+    "name": "Dr. Samira Islam",
+    "specialty": "Animal Nutrition Expert",
+    "experience": "5+ Years Experience",
+    "rating": 4.8,
+    "image": "https://i.ibb.co.com/qYfm3DpB/ai-generated-8949588-1280.jpg"
+  }
+]

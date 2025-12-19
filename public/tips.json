@@ -1,0 +1,26 @@
+[
+  {
+    "id": 1,
+    "title": "Keep Your Pets Warm",
+    "description": "Provide cozy blankets, warm bedding, and heated pet pads to keep your pets comfortable during the cold months.",
+    "image": "https://i.ibb.co.com/YBx7BTT1/griffin-taylor-yf-XSQPoiq-Kw-unsplash.jpg"
+  },
+  {
+    "id": 2,
+    "title": "Proper Nutrition",
+    "description": "Feed pets high-quality food and maintain proper hydration. Cold weather increases their energy requirements.",
+    "image": "https://i.ibb.co.com/0R8mGrjJ/shraga-kopstein-uo-KLLk-PBkqc-unsplash.jpg"
+  },
+  {
+    "id": 3,
+    "title": "Regular Exercise",
+    "description": "Even in winter, make sure your pets get daily exercise to stay healthy and prevent stiffness or weight gain.",
+    "image": "https://images.unsplash.com/photo-1574158622682-e40e69881006"
+  },
+  {
+    "id": 4,
+    "title": "Protect Paws",
+    "description": "Check and clean your pets' paws after outdoor walks to remove ice, salt, or chemicals that may irritate them.",
+    "image": "https://images.unsplash.com/photo-1574158622682-e40e69881006"
+  }
+]

@@ -15,9 +15,15 @@ const router = createBrowserRouter(
             Component:HomeLayout,
             children:[
                 {
-                    path:'/home',
-                    loader:()=>fetch("./public/Fake.json"),
-                    Component:Home
+             path: "/home",
+         loader: async () => {
+         const services = await fetch("/Fake.json").then(r => r.json());
+        const doctors = await fetch("/doctor.json").then(r => r.json());
+        const tips = await fetch("/tips.json").then(r => r.json());
+
+         return { services, doctors,tips };
+                         },
+             Component: Home
                 },
                 {
                     path:'/services',
