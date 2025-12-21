@@ -22,11 +22,12 @@ const Data = ({ d }) => {
       <span>${d.price}</span>
     </div>
 
-    <NavLink to='/services'>
-        <button className="btn btn-info btn-sm mt-2 w-full">
-      View Details
-    </button>
-    </NavLink>
+    <NavLink to={`/services/${d.serviceId}`}>
+  <button className="btn btn-info btn-sm mt-2 w-full">
+    View Details
+  </button>
+</NavLink>
+
   </div>
 </div>
 

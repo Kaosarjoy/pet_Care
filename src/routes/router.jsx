@@ -8,6 +8,7 @@ import Register from "../page/Register";
 import Home from "../page/Home";
 import Services from "../page/Services";    
 import MyProfile from "../page/MyProfile";
+import ServiceDetails from "../page/ServiceDetails";
 const router = createBrowserRouter(
     [
         {
@@ -29,6 +30,11 @@ const router = createBrowserRouter(
                     path:'/services',
                     Component:Services
                 },
+                {
+                    path:"/services/:id",
+                    Component:ServiceDetails
+                },
+               
                 {
                     path:'/myProfile',
                     Component:MyProfile
