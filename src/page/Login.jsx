@@ -6,7 +6,7 @@ import { Bounce, toast, ToastContainer } from 'react-toastify';
 
 
 const Login = () => {
-  const {createUser,signInWithGoogle}=useContext(AuthContext)
+  const { signInUser,signInWithGoogle}=useContext(AuthContext)
   const navigate = useNavigate()
   const [showPassword, setShowPassword] = useState(false);
   const togglePassword=()=>{
@@ -19,7 +19,7 @@ const Login = () => {
     const email = form.email.value;
     const password = form.password.value;
     console.log(email, password);
-    createUser(email,password)
+     signInUser(email,password)
     .then(()=>{
       toast.success('Login Successful', {
         position: "top-right",
