@@ -6,7 +6,7 @@ import {
     signOut, 
     onAuthStateChanged, 
     GoogleAuthProvider,
-    signInWithPopup // 💡 নতুন ইম্পোর্ট
+    signInWithPopup 
 } from "firebase/auth";
 import app from '../../firebase/firebase.config';
 
@@ -38,7 +38,7 @@ const AuthProvider = ({ children }) => {
         setLoading(true); 
         return signOut(auth);
     };
-
+ 
     
     useEffect(() => {
         const unsubscribe = onAuthStateChanged(auth, (currentUser) => {
@@ -60,9 +60,9 @@ const AuthProvider = ({ children }) => {
     };
 
     return (
-        <AuthContext.Provider value={authInfo}>
+        <AuthContext value={authInfo}>
             {children}
-        </AuthContext.Provider>
+        </AuthContext>
     );
 };
 

@@ -1,31 +1,33 @@
 import React, { useContext } from "react";
 import { NavLink, useNavigate } from "react-router";
 import { AuthContext } from "../component/Provider/AuthProvider";
+import { updateProfile } from "firebase/auth";
 
 const Register = () => {
   const { createUser } = useContext(AuthContext);
   const navigate = useNavigate();
 
-  const handleRegister = (e) => {
-    e.preventDefault();
-    const form = e.target;
-    const name = form.name.value;
-    const email = form.email.value;
-    const photo = form.photo.value;
-    const password = form.password.value;
+ const handleRegister = async (e) => {
+  e.preventDefault();
+  const form = e.target;
+  const name = form.name.value;
+  const email = form.email.value;
+  const photo = form.photo.value;
+  const password = form.password.value;
 
-   createUser(email, password)
-  .then(result => {
-    const user = result.user;
-    user.updateProfile({
+  try {
+    const result = await createUser(email, password);
+
+    await updateProfile(result.user, {
       displayName: name,
-      photoURL: photo
+      photoURL: photo,
     });
-    navigate('/');
-  })
 
-      .catch(error => console.error("Registration Error:", error.message));
-  };
+    navigate("/");
+  } catch (error) {
+    console.error("Registration Error:", error.message);
+  }
+};
 
   return (
     <div className="min-h-screen flex items-center justify-center bg-gray-100">

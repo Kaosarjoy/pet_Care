@@ -1,6 +1,7 @@
 import React, { useContext } from 'react';
 import { AuthContext } from '../component/Provider/AuthProvider';
 import { NavLink } from 'react-router';
+import Marquee from 'react-fast-marquee';
 
 const MyProfile = () => {
   const { user } = useContext(AuthContext);
@@ -8,11 +9,14 @@ const MyProfile = () => {
   if (!user) {
     return (
       <div>
-        <h2 className='text-center m-10 text-2xl text-green-400'>
-          Please <NavLink to='/auth/login' className='text-red-500 underline'>Login</NavLink> 
-          or <NavLink to='/auth/register' className='underline text-black'>Register</NavLink>
+        <Marquee className='bg-blue-200 p-4 m-4 max-w-[1200px] rounded-xl' speed={50} pauseOnHover={true}>
+      <h2 className='text-center m-10 text-2xl text-green-400'>
+          Please <NavLink to='/auth/login' className='text-red-500 underline'> Login </NavLink> 
+          or <NavLink to='/auth/register' className='underline text-black'> Register </NavLink>
           to view your profile
         </h2>
+        </Marquee>
+        
       </div> 
     );
   }

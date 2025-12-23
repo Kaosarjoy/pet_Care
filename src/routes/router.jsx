@@ -9,6 +9,8 @@ import Home from "../page/Home";
 import Services from "../page/Services";    
 import MyProfile from "../page/MyProfile";
 import ServiceDetails from "../page/ServiceDetails";
+import PrivateRoute from "../component/Provider/PrivateRoute";
+import Loader from "../page/Loader";
 const router = createBrowserRouter(
     [
         {
@@ -21,18 +23,24 @@ const router = createBrowserRouter(
          const services = await fetch("/Fake.json").then(r => r.json());
         const doctors = await fetch("/doctor.json").then(r => r.json());
         const tips = await fetch("/tips.json").then(r => r.json());
-
          return { services, doctors,tips };
+        
                          },
-             Component: Home
+            element:<PrivateRoute>
+                <Home></Home>
+            </PrivateRoute>
                 },
                 {
                     path:'/services',
-                    Component:Services
+                    element:<PrivateRoute>
+                        <Services></Services>
+                    </PrivateRoute>
                 },
                 {
                     path:"/services/:id",
-                    Component:ServiceDetails
+                    element:<PrivateRoute>
+                        <ServiceDetails></ServiceDetails>
+                    </PrivateRoute>
                 },
                
                 {

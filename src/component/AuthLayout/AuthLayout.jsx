@@ -2,6 +2,7 @@ import React from 'react';
 import Login from '../../page/Login';
 import Navbar from '../Navbar/Navbar';
 import { Outlet } from 'react-router';
+import Footer from '../Footer/Footer';
 
 
 
@@ -11,7 +12,7 @@ const AuthLayout = () => {
        <div>
         <Navbar></Navbar>
         <Outlet></Outlet>
-         <Login></Login>
+        <Footer></Footer>
          
       
        </div>
